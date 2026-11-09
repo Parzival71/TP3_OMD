@@ -9,7 +9,10 @@ public class Calculette {
         return a - b ;
     }
 
-    public static int division(double a, double b){
+    public static int multiplication(int a, int b) {
+        return a * b;
+    
+      public static int division(double a, double b){
         if (b == 0){
             throw new IllegalArgumentException("Division par zéro interdite");
 
