@@ -9,13 +9,25 @@ public class Calculette {
         return a - b ;
     }
 
+    public static int multiplication(int a, int b) {
+        return a * b;
+    }
+    
+    public static int division(double a, double b){
+        if (b == 0){
+            // Test conflit
+            throw new IllegalArgumentException("Division par zéro interdite");
+
+        }
+        return (int) (a / b);  
+    }
     // Modifiez le nom et le corps de la fonction
-    public double diviser(double numerateur, double denominateur) {
-      if (denominateur == 0) {
+    public double diviser(double a, double b) {
+      if (b == 0) {
         System.out.println("Erreur critique : denominateur nul !");
         return 0;
     }
-    return numerateur / denominateur;
+    return a / b;
 }
 
 
