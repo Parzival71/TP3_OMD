@@ -9,14 +9,15 @@ public class Calculette {
         return a - b ;
     }
 
-    public static int division(double a, double b){
-        if (b == 0){
-            throw new IllegalArgumentException("Division par zéro interdite");
-
-
-        }
-        return (int) (a / b);  
+    // Modifiez le nom et le corps de la fonction
+    public double diviser(double numerateur, double denominateur) {
+      if (denominateur == 0) {
+        System.out.println("Erreur critique : denominateur nul !");
+        return 0;
     }
+    return numerateur / denominateur;
+}
+
 
     public static void main(String[] args) {
         System.out.println("1 + 3 = " + addition(1,3));
