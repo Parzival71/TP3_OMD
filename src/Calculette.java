@@ -13,10 +13,10 @@ public class Calculette {
         return a * b;
     }
     
-      public static int division(double a, double b){
+    public static int division(double a, double b){
         if (b == 0){
+            // Test conflit
             throw new IllegalArgumentException("Division par zéro interdite");
-
 
         }
         return (int) (a / b);  
